@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flatgrey2" translatesAutoresizingMaskIntoConstraints="NO" id="CF2-gR-I9g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIP300CLEAR" translatesAutoresizingMaskIntoConstraints="NO" id="9x1-jZ-bFG">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Pir-IC-tem"/>
+                                    <constraint firstAttribute="height" constant="300" id="Voa-zA-j9i"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CF2-gR-I9g" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="5Yg-bx-xkj"/>
+                            <constraint firstItem="9x1-jZ-bFG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MqP-rg-Rza"/>
+                            <constraint firstItem="CF2-gR-I9g" firstAttribute="centerX" secondItem="9x1-jZ-bFG" secondAttribute="centerX" id="TLg-sM-Y4Q"/>
+                            <constraint firstItem="CF2-gR-I9g" firstAttribute="centerY" secondItem="9x1-jZ-bFG" secondAttribute="centerY" id="i0b-CI-YPq"/>
+                            <constraint firstItem="CF2-gR-I9g" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="swO-ir-wgK"/>
+                            <constraint firstItem="9x1-jZ-bFG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ue5-Ru-4Kb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +44,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TIP300CLEAR" width="300" height="300"/>
+        <image name="flatgrey2" width="1400" height="851"/>
+    </resources>
 </document>
